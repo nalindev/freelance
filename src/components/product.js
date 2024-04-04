@@ -62,10 +62,10 @@ return(
             <p class="text-3xl font-bold md:text-6xl text-teal-600">25% OFF</p>
             <p class="text-4xl font-bold md:text-6xl">SUMMER SALE</p>
             <p class="mt-3 text-sm md:text-lg">For limited time only!</p>
-            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-7 hover:bg-zinc-800">Shop Now</button>
+            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-7 hover:bg-zinc-800">Buy Now</button>
         </div>
         <div class="order-1 lg:order-2">
-            <img class="h-80 w-80 object-cover lg:w-[250px] lg:h-[300px]" src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="" />
+            <img class="h-80 w-80 object-cover lg:w-[250px] lg:h-[300px]" src="https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg" alt="" />
         </div>
     </div>
 </section>
