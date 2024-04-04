@@ -131,7 +131,7 @@ function AboutUsPage() {
                         </div>
                         <div class="w-full">
                             {/* SECOND HALF COlumn */}
-                            <ul class="max-w-2xl mx-auto divide-y  shadow shadow-teal-600 rounded-xl">
+                            <ul class="max-w-2xl mx-auto divide-y  shadow shadow-teal-600 rounded-xl hover:shadow-teal-800 hover:shadow">
                                 <h3 className='text-xl  tracking-wide p-3 px-6 font-semibold'>Products</h3>
     <li>
         <details class="group">
@@ -291,7 +291,7 @@ function AboutUsPage() {
 
 {/* CONTACT US */}
 <div className='py-8'>
-                <div className='lg:max-w-2xl mx-auto divide-y shadow shadow-teal-600 rounded-xl'>
+                <div className='lg:max-w-2xl mx-auto divide-y shadow shadow-teal-600 rounded-xl hover:shadow-teal-800 hover:shadow'>
                 <h3 className='text-xl  tracking-wide p-3 px-6 font-semibold'>Contact Us</h3>
                 <div className='text-sm '>
             <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">Abhi Solution Technology</summary>
