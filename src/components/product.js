@@ -1,5 +1,13 @@
 import React, { useState } from 'react'
 
+const product = ["https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg",
+"https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg",
+"https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg",
+"https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg",
+"https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg",
+"https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg",
+];
+
 export default function Product(){
 
     const popup = <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
@@ -55,20 +63,20 @@ const [cookie, setCookie] = useState(cookie_popup);
 return(
     <>
     {Model}
-    {cookie}
+   
     <section class="relative z-10 overflow-hidden px-3 py-7 bg-teal-600 lg:py-8">
     <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
         <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
-            <p class="text-3xl font-bold md:text-6xl text-white">25% OFF</p>
-            <p class="text-3xl font-bold md:text-6xl">SUMMER SALE</p>
-            <p class="mt-3 text-sm md:text-lg">For limited time only!</p>
-            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-7 hover:bg-zinc-800">Buy Now</button>
+            <p className="text-3xl font-bold md:text-6xl text-white">25% OFF</p>
+            <p className="text-3xl font-bold md:text-6xl">SUMMER SALE</p>
+            <p className="mt-3 text-sm md:text-lg">For limited time only!</p>
+            <button className="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-7 hover:bg-zinc-800">Buy Now</button>
         </div>
         <div class="hidden sm:block order-1 lg:order-2">
-            <img class="h-80 w-80 object-cover rounded-3xl lg:w-[220px] lg:h-[270px] hover:shadow" src="https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg" alt="" />
+            <img className="h-80 w-80 object-cover rounded-3xl lg:w-[220px] lg:h-[270px] hover:shadow" src="https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg" alt="" />
         </div>
     </div>
-    <span class="absolute top-0 right-0 -z-10">
+    <span className="absolute top-0 right-0 -z-10">
                     <svg width="388" height="250" viewBox="0 0 388 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6910)"></path><defs><linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-0 right-0 -z-10"><svg width="324" height="250" viewBox="0 0 324 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6911)"></path><defs><linearGradient id="paint0_linear_971_6911" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-4 left-4 -z-10"><svg width="43" height="56" viewBox="0 0 43 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="white"></circle><circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="white"></circle><circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="white"></circle><circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="white"></circle><circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="white"></circle><circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="white"></circle><circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="white"></circle><circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="white"></circle><circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="white"></circle><circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="white"></circle><circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="white"></circle><circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="white"></circle><circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="white"></circle><circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="white"></circle><circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="white"></circle><circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="white"></circle><circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="white"></circle><circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="white"></circle><circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="white"></circle><circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="white"></circle></g>
                     </svg>
                 </span>
@@ -78,7 +86,102 @@ return(
 <div class="flex items-center ">
     <span class="text-gray-900/40"><a href="/" class="hover:text-teal-600">Home</a> / <span href="/" class="text-black">Products</span></span>
 </div>
-</div>
+
+{/* Colums of Items */}
+<section class="py-4">
+<h2 class="text-2xl md:text-2xl pl-2 my-2  border-l-4  font-sans font-bold border-teal-400  dark:text-BLACK-200"><a href="/" className='hover:text-teal-600'>GPS Batteries</a> </h2>
+<hr class="h-px bg-gray-200 border-0 dark:bg-gray-200"></hr>
+ <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4">
+ {product.map(function(img, i){
+        // return <ObjectRow obj={object} key={i} />;
+        return (<>
+        <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
+      <a href="#">
+        <div class="relative flex items-end overflow-hidden rounded-xl">
+          <img src={img} key={i} alt="Hotel Photo" />
+          <div class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <span class="text-slate-400 ml-1 text-sm">4.9</span>
+          </div>
+        </div>
+
+        <div class="mt-1 p-2">
+          <h2 class="text-slate-700">11.1V 18.2Ah Lithium Ion Battery</h2>
+          <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
+
+          <div class="mt-3 flex items-end justify-between">
+            <p>
+              <span class="text-lg font-bold text-teal-500">$850</span>
+              <span class="text-slate-400 teal-sm">/night</span>
+            </p>
+
+            <div class="group inline-flex rounded-xl bg-teal-100 p-2 hover:bg-teal-200">
+              <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:text-teal-500 h-4 w-4 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+    </article>
+        </>);
+    })}
+    
+
+  </div>
+</section>
+
+
+{/* POS Batteries */}
+{/* Colums of Items */}
+<section class="py-4">
+<h2 class="text-2xl md:text-2xl pl-2 my-2  border-l-4  font-sans font-bold border-teal-400  dark:text-BLACK-200"><a href="/" className='hover:text-teal-600'>POS Batteries</a> </h2>
+<hr class="h-px bg-gray-200 border-0"></hr>
+ <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4">
+ {product.map(function(img, i){
+        // return <ObjectRow obj={object} key={i} />;
+        return (<>
+        <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
+      <a href="#">
+        <div class="relative flex items-end overflow-hidden rounded-xl">
+          <img src={img} key={i} alt="Hotel Photo" />
+          <div class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <span class="text-slate-400 ml-1 text-sm">4.9</span>
+          </div>
+        </div>
+
+        <div class="mt-1 p-2">
+          <h2 class="text-slate-700">11.1V 18.2Ah Lithium Ion Battery</h2>
+          <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
+
+          <div class="mt-3 flex items-end justify-between">
+            <p>
+              <span class="text-lg font-bold text-teal-500">$850</span>
+              <span class="text-slate-400 teal-sm">/night</span>
+            </p>
+
+            <div class="group inline-flex rounded-xl bg-teal-100 p-2 hover:bg-teal-200">
+              <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:text-teal-500 h-4 w-4 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+    </article>
+        </>);
+    })}
+    
+
+  </div>
+</section>
+
+</div> {cookie}
     </>
 );
 
