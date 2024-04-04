@@ -89,8 +89,15 @@ return(
 
 {/* Colums of Items */}
 <section class="py-4">
-<h2 class="text-2xl md:text-2xl pl-2 my-2  border-l-4  font-sans font-bold border-teal-400  dark:text-BLACK-200"><a href="/" className='hover:text-teal-600'>GPS Batteries</a> </h2>
-<hr class="h-px bg-gray-200 border-0 dark:bg-gray-200"></hr>
+<p class="font-bold text-xl">
+    <span class="text-teal-500 mx-1 font-extrabold text-3xl relative inline-block stroke-current">
+        GPS Batteries
+        <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none">
+            <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
+        </svg>
+    </span>
+</p>
  <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4">
  {product.map(function(img, i){
         // return <ObjectRow obj={object} key={i} />;
@@ -137,8 +144,15 @@ return(
 {/* POS Batteries */}
 {/* Colums of Items */}
 <section class="py-4">
-<h2 class="text-2xl md:text-2xl pl-2 my-2  border-l-4  font-sans font-bold border-teal-400  dark:text-BLACK-200"><a href="/" className='hover:text-teal-600'>POS Batteries</a> </h2>
-<hr class="h-px bg-gray-200 border-0"></hr>
+<p class="font-bold text-xl">
+    <span class="text-teal-500 mx-1 font-extrabold text-3xl relative inline-block stroke-current">
+    POS Machine Batteries
+        <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none">
+            <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
+        </svg>
+    </span>
+</p>
  <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4">
  {product.map(function(img, i){
         // return <ObjectRow obj={object} key={i} />;
