@@ -9,7 +9,6 @@ import { FaPinterest } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
-import { FaPaperPlane } from "react-icons/fa";
 
 function ProductPage() {
 
@@ -80,7 +79,6 @@ function ProductPage() {
             <div className="max-w-7xl mx-auto p-8">
                 <div class="flex items-center text-sm">
                     <span class="text-gray-900/40"><a href="/" class="hover:text-violet-600">Products</a> / <a href="/" class="hover:text-violet-600">GPS Batteries</a> / <span href="/" class="text-black">3.7V 300mAh Lithium Ion Battery</span></span>
-
                 </div>
 
                 <div className='flex flex-col justify-between lg:flex-row p-4 gap-10 '>
