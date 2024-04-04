@@ -75,7 +75,7 @@ function AboutUsPage() {
                 </div>
 
                 
-                <div class="grid lg:grid-cols-3 lg:gap-24 lg:p-2">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-24 lg:p-2">
                 <div class="col-span-2">
                     <p className='py-2 w-full text-sm text-left text-black-500'>Greetings from Abhi Solution Technology, your reliable manufacturer, exporter & supplier of state-of-the-art GPS Batteries, POS Machine Batteries, Solar Batteries, Electric Vehicle Batteries.. Located in the centre of Ambala, Haryana, we are more than simply producers and distributors—we are the designers of smooth travel experiences, the facilitators of accurate navigation, and the architects of your confidence in technology.</p>
                     <h3 className='py-2 font-semibold'>Pioneering Excellence:</h3>
@@ -129,7 +129,7 @@ function AboutUsPage() {
                         </div>
                         </div>
                         </div>
-                        <div>
+                        <div class="w-full">
                             {/* SECOND HALF COlumn */}
                             <ul class="max-w-2xl mx-auto divide-y  shadow shadow-teal-600 rounded-xl">
                                 <h3 className='text-xl  tracking-wide p-3 px-6 font-semibold'>Products</h3>
@@ -291,7 +291,7 @@ function AboutUsPage() {
 
 {/* CONTACT US */}
 <div className='py-8'>
-                <div className='max-w-2xl mx-auto divide-y shadow shadow-teal-600 rounded-xl'>
+                <div className='lg:max-w-2xl mx-auto divide-y shadow shadow-teal-600 rounded-xl'>
                 <h3 className='text-xl  tracking-wide p-3 px-6 font-semibold'>Contact Us</h3>
                 <div className='text-sm '>
             <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">Abhi Solution Technology</summary>
