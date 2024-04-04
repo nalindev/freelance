@@ -71,7 +71,7 @@ function AboutUsPage() {
             
             <div className="max-w-7xl mx-auto p-8">
                 <div class="flex items-center ">
-                    <span class="text-gray-900/40"><a href="/" class="hover:text-violet-600">Products</a> / <span href="/" class="text-black">About Us</span></span>
+                    <span class="text-gray-900/40"><a href="/" class="hover:text-teal-600">Products</a> / <span href="/" class="text-black">About Us</span></span>
                 </div>
 
                 

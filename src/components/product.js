@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 export default function Product(){
+
     const popup = <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
     <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
         <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"></div>
@@ -55,7 +56,7 @@ return(
     <>
     {Model}
     {cookie}
-    <section class="relative z-10 overflow-hidden px-3 py-5 bg-teal-600 lg:py-8">
+    <section class="relative z-10 overflow-hidden px-3 py-7 bg-teal-600 lg:py-8">
     <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
         <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
             <p class="text-3xl font-bold md:text-6xl text-white">25% OFF</p>
@@ -63,7 +64,7 @@ return(
             <p class="mt-3 text-sm md:text-lg">For limited time only!</p>
             <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-7 hover:bg-zinc-800">Buy Now</button>
         </div>
-        <div class="order-1 lg:order-2">
+        <div class="hidden sm:block order-1 lg:order-2">
             <img class="h-80 w-80 object-cover rounded-3xl lg:w-[220px] lg:h-[270px] hover:shadow" src="https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg" alt="" />
         </div>
     </div>
@@ -72,6 +73,12 @@ return(
                     </svg>
                 </span>
 </section>
+
+<div className="max-w-7xl mx-auto p-8">
+<div class="flex items-center ">
+    <span class="text-gray-900/40"><a href="/" class="hover:text-teal-600">Home</a> / <span href="/" class="text-black">Products</span></span>
+</div>
+</div>
     </>
 );
 
