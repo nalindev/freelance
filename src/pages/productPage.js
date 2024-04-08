@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BiSolidOffer } from 'react-icons/bi';
 import { FaEnvelope } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
@@ -9,14 +9,26 @@ import { FaPinterest } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function ProductPage() {
 
+    const { id } = useParams();
+    const [product, setProduct] = useState(null)
     const [images, setImages] = useState({
         img1: "https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg",
         img2: "https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2013_57_00_744757_7-4v-4400mah-electric-vehicle-lithium-ion-battery-1699010061-7157589.jpeg",
         img3: "https://storage.googleapis.com/ev-public-bucket/images/2024_02_17%2009_43_32_329600_3-7v-800mah-electric-vehicle-lithium-ion-battery-1699010136-7157593.jpeg"
     })
+
+  const { catalaugeList } = useSelector((state) => state.Home)
+    useEffect(() => {
+        if (catalaugeList.length > 0) {
+          setProduct(catalaugeList.filter((value) => value.id.toString() === id)[0])
+        }
+        // getSingleProduct(`${API}?id=${id}`)
+      }, [catalaugeList])
 
     const popup = <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
         <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
@@ -83,7 +95,7 @@ function ProductPage() {
 
                 <div className='flex flex-col justify-between lg:flex-row p-4 gap-10 '>
                     <div className='flex flex-col gap-6 lg:w-2/5'>
-                        <img src={activeImg} alt="" className='w-full h-full aspect-square object-cover rounded-xl hover:shadow-lg' />
+                        <img src={product?.thumbnail_url} alt="" className='w-full h-full aspect-square object-cover rounded-xl hover:shadow-lg' />
                         <div className='flex flex-row justify-between h-24'>
                             <img src={images.img1} alt="" className='w-24 h-24 rounded-md cursor-pointer shadow hover:shadow-lg border-[2px]' onClick={() => setActiveImage(images.img1)} />
                             <img src={images.img2} alt="" className='w-24 h-24 rounded-md cursor-pointer shadow hover:shadow-lg border-[2px]' onClick={() => setActiveImage(images.img2)} />
@@ -94,11 +106,11 @@ function ProductPage() {
                     <div className='flex flex-col gap-4 lg:w-2/4'>
                         <div>
                             <span className='flex text-violet-600 font-semibold'>Get Best Price  &nbsp;<BiSolidOffer /></span>
-                            <h1 className='text-3xl font-bold tracking-wide'>7.4V/2600mAh Lithium Ion Solar Battery</h1>
+                            <h1 className='text-3xl font-bold tracking-wide'>{product?.product_name}</h1>
                         </div>
 
                         <div class="flex items-center justify-between pt-1">
-                            <span class="text-x">MOQ: <strong>10 Piece</strong></span>
+                            <span class="text-x">MOQ: <strong>{product?.moq} Piece</strong></span>
                             <div class="flex items-center">
                                 <div class="flex space-x-px">
                                     <FaStar className='text-teal-500' />
@@ -118,11 +130,11 @@ function ProductPage() {
                             <tbody>
                                 <tr class="bg-white border-b ">
                                     <td class="py-3 px-6">Business Type</td>
-                                    <td class="py-3 px-6">Manufacturer, Exporter, Supplier</td>
+                                    <td class="py-3 px-6">{product?.business_type}</td>
                                 </tr>
                                 <tr class="bg-white border-b">
                                     <td class="py-3 px-6">Material</td>
-                                    <td class="py-3 px-6"></td>
+                                    <td class="py-3 px-6">{product?.material}</td>
                                 </tr>
                                 <tr class="bg-white border-b ">
                                     <td class="py-3 px-6">Color</td>
