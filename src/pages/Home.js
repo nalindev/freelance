@@ -3,6 +3,7 @@ import CategoryCrowsel from '../components/CategoryCrowsel'
 import Introduction from '../components/Introduction'
 import BlogSlider from '../components/BlogSlider'
 import Search from '../components/search'
+import Brand from '../container/brands';
 
 
 const Home = () => {
@@ -39,6 +40,7 @@ const [Model, setModel] = useState(popup);
       <CategoryCrowsel/>
       <Introduction/>
       <BlogSlider/>
+      <Brand />
       <Search />
     </div>
   )

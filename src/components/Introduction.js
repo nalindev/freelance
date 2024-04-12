@@ -1,5 +1,4 @@
 import React from 'react'
-import introduction from "../assets/images/Welcome Image.jpg"
 import { FaStar } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -48,8 +47,9 @@ const Introduction = () => {
                     </div>
                 </div>
             </div>
-
         </div>
+
+        
         
 
         <section class="bg-white">
@@ -111,6 +111,7 @@ const Introduction = () => {
     </div>
   </div>
 </section>
+
 
 
 <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-5">
