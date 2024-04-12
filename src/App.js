@@ -9,7 +9,8 @@ import { useDispatch } from "react-redux";
 import { catalougeData } from "./features/Home/Home";
 import { useEffect } from 'react';
 import Contact from './pages/Contact';
-import ContactNew from './pages/ContactNew';
+import Whatsapp from './container/whatsapp';
+import Cookie from './container/cookie';
 
 function App() {
 
@@ -56,6 +57,8 @@ function App() {
         })}
       </Routes>
       <Footer/>
+      <Whatsapp />
+      <Cookie />
     </>
   );
 }

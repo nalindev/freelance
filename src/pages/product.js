@@ -47,32 +47,7 @@ export default function Product() {
     </div>
   </div>;
 
-  const cookie_popup = <div class="fixed bottom-0 right-0 mb-4 mr-4 w-64">
-    <div class="bg-white rounded-lg shadow-lg p-4">
-      <div class="flex items-center justify-between mb-2">
-        <div class="flex items-center">
-          <img src="https://www.svgrepo.com/show/401340/cookie.svg" alt="Cookie" class="h-6 w-6 mr-2" />
-          <span class="text-gray-700 font-bold text-sm">Cookie Policy</span>
-        </div>
-        <button class="text-gray-500 hover:text-gray-700 focus:outline-none" onClick={() => setCookie("")}>
-          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-            </path>
-          </svg>
-        </button>
-      </div>
-      <p class="text-gray-600 text-sm">
-        We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of
-        cookies.
-      </p>
-      <button class="mt-4 bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded" onClick={() => setCookie("")}>
-        Accept
-      </button>
-    </div>
-  </div>;
-
   const [Model, setModel] = useState(popup);
-  const [cookie, setCookie] = useState(cookie_popup);
 
   return (
     <>
@@ -157,115 +132,7 @@ export default function Product() {
             </section>
           )
         })}
-        {/* Colums of Items */}
-        {/* <section class="py-4">
-          <p class="font-bold text-xl">
-            <span class="text-teal-500 mx-1 font-extrabold text-3xl relative inline-block stroke-current">
-              GPS Batteries
-              <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none">
-                <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
-              </svg>
-            </span>
-          </p>
-          <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4">
-            {product.map(function (img, i) {
-              // return <ObjectRow obj={object} key={i} />;
-              return (<>
-                <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
-                  <a href="#">
-                    <div class="relative flex items-end overflow-hidden rounded-xl">
-                      <img src={img} key={i} alt="Hotel Photo" />
-                      <div class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <span class="text-slate-400 ml-1 text-sm">4.9</span>
-                      </div>
-                    </div>
-
-                    <div class="mt-1 p-2">
-                      <h2 class="text-slate-700">11.1V 18.2Ah Lithium Ion Battery</h2>
-                      <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
-
-                      <div class="mt-3 flex items-end justify-between">
-                        <p>
-                          <span class="text-lg font-bold text-teal-500">$850</span>
-                          <span class="text-slate-400 teal-sm">/night</span>
-                        </p>
-
-                        <div class="group inline-flex rounded-xl bg-teal-100 p-2 hover:bg-teal-200">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:text-teal-500 h-4 w-4 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </>);
-            })}
-
-
-          </div>
-        </section> */}
-
-
-        {/* POS Batteries */}
-        {/* Colums of Items */}
-        {/* <section class="py-4">
-          <p class="font-bold text-xl">
-            <span class="text-teal-500 mx-1 font-extrabold text-3xl relative inline-block stroke-current">
-              POS Machine Batteries
-              <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none">
-                <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
-              </svg>
-            </span>
-          </p>
-          <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4">
-            {product.map(function (img, i) {
-              // return <ObjectRow obj={object} key={i} />;
-              return (<>
-                <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
-                  <a href="#">
-                    <div class="relative flex items-end overflow-hidden rounded-xl">
-                      <img src={img} key={i} alt="Hotel Photo" />
-                      <div class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <span class="text-slate-400 ml-1 text-sm">4.9</span>
-                      </div>
-                    </div>
-
-                    <div class="mt-1 p-2">
-                      <h2 class="text-slate-700">11.1V 18.2Ah Lithium Ion Battery</h2>
-                      <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
-
-                      <div class="mt-3 flex items-end justify-between">
-                        <p>
-                          <span class="text-lg font-bold text-teal-500">$850</span>
-                          <span class="text-slate-400 teal-sm">/night</span>
-                        </p>
-
-                        <div class="group inline-flex rounded-xl bg-teal-100 p-2 hover:bg-teal-200">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:text-teal-500 h-4 w-4 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </article>
-              </>);
-            })}
-
-
-          </div>
-        </section> */}
-
-      </div> {cookie}
+      </div> 
     </>
   );
 
