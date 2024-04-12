@@ -8,6 +8,8 @@ import Footer from './container/Footer';
 import { useDispatch } from "react-redux";
 import { catalougeData } from "./features/Home/Home";
 import { useEffect } from 'react';
+import Contact from './pages/Contact';
+import ContactNew from './pages/ContactNew';
 
 function App() {
 
@@ -38,6 +40,10 @@ function App() {
       path: "product",
       element: <Product />
     },
+    {
+      path:"contact",
+      element:<Contact/>
+    }
   ]
   return (
     <>

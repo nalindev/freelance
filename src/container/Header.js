@@ -2,17 +2,30 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from "../assets/images/Logo.svg"
 import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About', href: '/aboutus', current: false },
     { name: 'Products', href: '/product', current: false },
-    { name: 'ContactUs', href: '/', current: false },
+    { name: 'ContactUs', href: '/contact', current: false },
 ]
+
 
 
 export default function Header() {
     const navigate = useNavigate()
+    const [navigationItems, setNavigationItems] = useState(navigation)
+
+    const handleItemClick = (clickedItem) => {
+        const updatedItems = navigationItems.map(item => ({
+            ...item,
+            current: item.name === clickedItem.name
+        }));
+        setNavigationItems(updatedItems);
+        navigate(clickedItem.href);
+    };
+
     return (
         <Disclosure as="nav" className="bg-[darkslategray]">
             {({ open }) => (
@@ -42,12 +55,10 @@ export default function Header() {
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
-                                        {navigation.map((item) => (
+                                        {navigationItems.map((item) => (
                                             <div
                                                 key={item.name}
-                                                onClick={() => {
-                                                    navigate(item.href)
-                                                }}
+                                                onClick={()=>handleItemClick(item)}
                                                 className={item.current ? 'bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
                                             >
                                                 {item.name}
