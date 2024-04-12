@@ -1,5 +1,7 @@
 import React from 'react'
 import introduction from "../assets/images/Welcome Image.jpg"
+import { FaStar } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Introduction = () => {
     return (
@@ -52,7 +54,82 @@ const Introduction = () => {
             </div>
 
         </div>
+        
 
+        <section class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+      Read trusted reviews from our customers
+    </h2>
+
+    <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div class="flex items-center gap-4">
+          <img alt="" src="https://avatars.githubusercontent.com/u/86837840?v=4" class="size-14 rounded-full object-cover"/>
+          <div>
+            <div class="flex justify-center gap-1.5 text-green-500">
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+            </div>
+            <p class="mt-0.5 text-lg font-medium text-gray-900">Nalin Nishant</p>
+          </div>
+        </div>
+        <p class="mt-4 text-gray-700">Powering up with Abhi Solution has been a game-changer! Their batteries are not only reliable but also eco-friendly, saving me money in the long run. Plus, their customer service is top-notch. If you want quality batteries that won't let you down, I highly recommend Abhi Solution!</p>
+      </blockquote>
+      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div class="flex items-center gap-4">
+          <img alt="" src="https://avatars.githubusercontent.com/u/86837840?v=4" class="size-14 rounded-full object-cover"/>
+          <div>
+            <div class="flex justify-center gap-1.5 text-green-500">
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+            </div>
+            <p class="mt-0.5 text-lg font-medium text-gray-900">Nalin Nishant</p>
+          </div>
+        </div>
+        <p class="mt-4 text-gray-700">Powering up with Abhi Solution has been a game-changer! Their batteries are not only reliable but also eco-friendly, saving me money in the long run. Plus, their customer service is top-notch. If you want quality batteries that won't let you down, I highly recommend Abhi Solution!</p>
+      </blockquote>
+      <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div class="flex items-center gap-4">
+          <img alt="" src="https://avatars.githubusercontent.com/u/86837840?v=4" class="size-14 rounded-full object-cover"/>
+          <div>
+            <div class="flex justify-center gap-1.5 text-green-500">
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+              <FaStar class="h-5 w-5"/>
+            </div>
+            <p class="mt-0.5 text-lg font-medium text-gray-900">Nalin Nishant</p>
+          </div>
+        </div>
+        <p class="mt-4 text-gray-700">Powering up with Abhi Solution has been a game-changer! Their batteries are not only reliable but also eco-friendly, saving me money in the long run. Plus, their customer service is top-notch. If you want quality batteries that won't let you down, I highly recommend Abhi Solution!</p>
+      </blockquote>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-5">
+    <div class="flex flex-col items-center gap-4 rounded-lg bg-teal-600 p-6 shadow-lg sm:flex-row sm:justify-between">
+      <strong class="text-xl text-white sm:text-xl"> Energize your machines like never before with our unstoppable batteries! </strong>
+      <NavLink to="/product">
+      <span to="/product" class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-teal-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90">
+        <span class="text-sm font-medium"> View Our Products </span>
+        <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+        </span>
+      </NavLink>
+    </div>
+    </div>
 
         {/* // <div className="container mx-auto p-4" style={{display:"flex", justifyContent:"space-around"}}>
         //     <div className="flex flex-col md:flex-row items-center">
