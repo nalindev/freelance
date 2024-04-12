@@ -8,24 +8,15 @@ const Introduction = () => {
         <>
   
         <div className="max-w-7xl mx-auto p-10">
-            <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:p-2">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:p-5">
                 <div className="col-span-1">
                 <h1 class="text-4xl lg:text-5xl font-bold">Welcome to Our <span class="text-green-700">Company</span></h1>
             <div class="w-20 h-2 bg-green-700 my-4"></div>
-                    {/* <p class="font-bold text-xl">
-                        <span class="text-teal-800 mx-1 font-extrabold text-3xl relative inline-block stroke-current">
-                            Welcome to Our Company
-                            <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
-                                preserveAspectRatio="none">
-                                <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
-                            </svg>
-                        </span>
-                    </p> */}
                     <br />
-                    <p className="text-lg text-black-500 tracking-wide text-opacity-0"> Greetings from Abhi Solution Technology, your reliable manufacturer, exporter & supplier of state-of-the-art GPS Batteries, POS Machine Batteries, Solar Batteries, Electric Vehicle Batteries. Located in the centre of Ambala, Haryana, we are more than simply producers and distributors—we are the designers of smooth travel experiences, the facilitators of accurate navigation, and the architects of your confidence in technology.   Pioneering Excellence: Not only do we as Abhi Solution Technology produce GPS batteries, but we also invented them. Our specialists explore the frontiers of innovation with uncompromising dedication, creating batteries that raise the bar for quality</p>
+                    <p className="text-lg text-black-500 tracking-wide text-opacity-0"> Greetings from <span className='text-teal-500 font-semibold'>Abhi Solution Technology</span>, your reliable manufacturer, exporter & supplier of state-of-the-art GPS Batteries, POS Machine Batteries, Solar Batteries, Electric Vehicle Batteries. Located in the centre of Ambala, Haryana, we are more than simply producers and distributors—we are the designers of smooth travel experiences, the facilitators of accurate navigation, and the architects of your confidence in technology.   Pioneering Excellence: Not only do we as Abhi Solution Technology produce GPS batteries, but we also invented them. Our specialists explore the frontiers of innovation with uncompromising dedication, creating batteries that raise the bar for quality</p>
                     <div class="p-4 w-full">
             <form
-                class="flex rounded-full px-4 py-2 ring-2 focus-within:ring-teal-500 hover:ring-2 hover:ring-teal-800">
+                class="flex rounded-full px-4 bg-gray-100 py-2 ring-2 ring-teal-500 focus-within:ring-teal-500 hover:ring-2 hover:ring-teal-800">
                 <input class="w-full appearance-none bg-gray-100 focus:outline-none" placeholder="Your email address" />
                 <button class=" rounded-full bg-gradient-to-br from-teal-500 to-cyan-400 px-8 py-1 text-sm font-medium hover:teal-700 focus:outline-none focus:ring-2 focus:ring-cyan-600/50" type="submit">Send
                 </button>
