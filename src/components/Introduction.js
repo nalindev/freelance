@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 const Introduction = () => {
     return (
         <>
-
   
         <div className="max-w-7xl mx-auto p-10">
             <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:p-2">
@@ -49,7 +48,13 @@ const Introduction = () => {
                     </div> */}
                 </div>
                 <div className="w-full flex col-span-1 justify-center items-center">
-                    <img class="px-2 h-auto max-w-lg  transition-all duration-300 rounded-lg cursor-pointer  hover:shadow rounded-3xl" src={introduction} alt="description" />
+                    <div class="flex flex-col items-end px-3">
+                        <img class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56" src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+                        <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40" src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+                    </div>
+                    <div class="px-3">
+                        <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80" src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="" />
+                    </div>
                 </div>
             </div>
 
