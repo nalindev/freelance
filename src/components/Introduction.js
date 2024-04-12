@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaStar } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Introduction = () => {
+  
+  useEffect(() => { AOS.init(); }, [])
+
     return (
         <>
   
@@ -39,11 +44,17 @@ const Introduction = () => {
                 </div>
                 <div className="w-full flex col-span-1 justify-center items-center">
                     <div class="flex flex-col items-end px-3">
+                    <div data-aos="fade-down-right" data-aos-duration="700">
                         <img class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56" src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+                        </div>
+                        <div data-aos="fade-up-right" data-aos-duration="800">
                         <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40" src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+                        </div>
                     </div>
+                    <div data-aos="fade-left" data-aos-duration="700">
                     <div class="px-3">
                         <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80" src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="" />
+                    </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +124,7 @@ const Introduction = () => {
 </section>
 
 
-
+<div data-aos="zoom-in">
 <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-5">
     <div class="flex flex-col items-center gap-4 rounded-lg bg-teal-600 p-6 shadow-lg sm:flex-row sm:justify-between">
       <strong class="text-xl text-white sm:text-xl"> Energize your machines like never before with our unstoppable batteries! </strong>
@@ -125,6 +136,7 @@ const Introduction = () => {
         </svg>
         </span>
       </NavLink>
+    </div>
     </div>
     </div>
         </>

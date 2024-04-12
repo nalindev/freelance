@@ -1,7 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaHandPointRight } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function AboutUsPage() {
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
     const popup = <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
         <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
             <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"></div>
@@ -283,6 +289,12 @@ function AboutUsPage() {
                         </div>
                         </div>
 
+                        {/* Impressive growth section */}
+                        <div data-aos="flip-up"
+    data-aos-offset="100"
+    data-aos-delay="10"
+    data-aos-duration="700"
+    >
             <section class="py-5 leading-6 text-teal-900 sm:py-16 lg:py-10">
                 <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                     <div class="mx-auto max-w-xl text-center">
@@ -332,6 +344,7 @@ function AboutUsPage() {
                     </div>
                 </div>
             </section>
+            </div>
 </div>
         </>
     );

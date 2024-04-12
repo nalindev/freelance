@@ -3,6 +3,10 @@ import { FaMapSigns } from "react-icons/fa";
 import { BsFillTelephoneFill, BsGlobeAmericas } from "react-icons/bs";
 import { FaPaperPlane } from "react-icons/fa";
 import Brand from "../container/brands";
+import AOS from 'aos';
+
+AOS.init();
+
 const Contact = () => {
   const formTab = [{ name: "" }, { name: "" }, { name: "" }, { name: "" }];
   const contactTab = [

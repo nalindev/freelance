@@ -10,8 +10,6 @@ module.exports = {
     extend: {},
   },
   daisyui: {
-    // themes: ["cupcake", "cmyk"],
  },
-  // plugins: [require("daisyui")]
 }
 
