@@ -120,7 +120,7 @@ export default function Product() {
                  return (<>
                   <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
                     <div onClick={()=>{navigate(`/productpage/${curElem?.id}`)}}>
-                      <div class="relative flex items-end overflow-hidden rounded-xl">
+                      <div className="relative flex items-end overflow-hidden rounded-xl lg:h-64">
                         <img src={curElem?.thumbnail_url} key={key} alt="Hotel Photo" />
                         <div class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-400" viewBox="0 0 20 20" fill="currentColor">

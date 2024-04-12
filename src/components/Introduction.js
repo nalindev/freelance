@@ -17,6 +17,7 @@ const Introduction = () => {
                     </p>
                     <br />
                     <p className="text-lg text-black-500 tracking-wide text-opacity-0"> Greetings from Abhi Solution Technology, your reliable manufacturer, exporter & supplier of state-of-the-art GPS Batteries, POS Machine Batteries, Solar Batteries, Electric Vehicle Batteries. Located in the centre of Ambala, Haryana, we are more than simply producers and distributors—we are the designers of smooth travel experiences, the facilitators of accurate navigation, and the architects of your confidence in technology.   Pioneering Excellence: Not only do we as Abhi Solution Technology produce GPS batteries, but we also invented them. Our specialists explore the frontiers of innovation with uncompromising dedication, creating batteries that raise the bar for quality</p>
+                    
                     <div data-element="fields" data-stacked="false" class="flex items-center w-full max-w-md mb-3 seva-fields formkit-fields">
                         <div class="relative w-full mr-3 formkit-field">
                             <label for="member_email" class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
