@@ -96,7 +96,7 @@ export default function Product() {
                   <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
                     <div onClick={()=>{navigate(`/productpage/${curElem?.id}`)}}>
                       <div className="relative flex items-end overflow-hidden rounded-xl lg:h-64">
-                        <div class="absolute border inset-0 z-10 bg-teal-800 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+                        <div class="absolute border inset-0 z-10 bg-teal-900 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
                           {/* <h1  class="tracking-wider">Title</h1>
                           <p  class="mx-auto">Description</p> */}
                           <table class="w-full text-sm text-left text-black-500">
@@ -164,18 +164,6 @@ export default function Product() {
           )
         })}
       </div> 
-
-<div class="relative ">
-<a class="absolute inset-0 z-10 bg-white text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
-  <h1  class="tracking-wider">Title</h1>
-  <p  class="mx-auto">Description</p>
-  </a>
-<a href="#" class="relative">
-    <div class="flex flex-wrap content-center">
-        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/15da9d15-e879-4b32-999c-07d17634cc0e/photos-01.jpg" class="mx-auto  " alt="" />
-    </div>
-</a>
-</div>
     </>
   );
 
