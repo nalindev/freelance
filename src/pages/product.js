@@ -96,7 +96,36 @@ export default function Product() {
                   <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
                     <div onClick={()=>{navigate(`/productpage/${curElem?.id}`)}}>
                       <div className="relative flex items-end overflow-hidden rounded-xl lg:h-64">
-                        <img src={curElem?.thumbnail_url} key={key} alt="Hotel Photo" />
+                        <div class="absolute inset-0 z-10 bg-white text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+                          {/* <h1  class="tracking-wider">Title</h1>
+                          <p  class="mx-auto">Description</p> */}
+                          <table class="w-full text-sm text-left text-black-500">
+                                <tbody>
+                                    <tr class="bg-white border-b ">
+                                        <td class="py-3 px-6">Size</td>
+                                        <td class="py-3 px-6">35 X 53 X 6 Mm</td>
+                                    </tr>
+                                    <tr class="bg-white border-b">
+                                        <td class="py-3 px-6">Capacity</td>
+                                        <td class="py-3 px-6">300mAh</td>
+                                    </tr>
+                                    <tr class="bg-white border-b ">
+                                        <td class="py-3 px-6">Country of Origin</td>
+                                        <td class="py-3 px-6">India</td>
+                                    </tr>
+                                    <tr class="bg-white border-b ">
+                                        <td class="py-3 px-6">Brand Name</td>
+                                        <td class="py-3 px-6">Abhi Solution Technology</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="#" class="relative">
+                          <div class="flex flex-wrap content-center">
+                            <img src={curElem?.thumbnail_url} key={key} class="mx-auto  " alt="Hotel Photo" />
+                          </div>
+                        </a>
+                        
                         <div class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -131,6 +160,18 @@ export default function Product() {
           )
         })}
       </div> 
+
+<div class="relative ">
+<a class="absolute inset-0 z-10 bg-white text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+  <h1  class="tracking-wider">Title</h1>
+  <p  class="mx-auto">Description</p>
+  </a>
+<a href="#" class="relative">
+    <div class="flex flex-wrap content-center">
+        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/15da9d15-e879-4b32-999c-07d17634cc0e/photos-01.jpg" class="mx-auto  " alt="" />
+    </div>
+</a>
+</div>
     </>
   );
 
