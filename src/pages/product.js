@@ -79,6 +79,7 @@ export default function Product() {
 
         {type.map((value, key) => {
           return (
+            <div data-aos="zoom-out">
             <section class="py-4">
               <p class="font-bold text-xl">
                 <span class="text-teal-500 mx-1 font-extrabold text-3xl relative inline-block stroke-current">
@@ -96,7 +97,7 @@ export default function Product() {
                   <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
                     <div onClick={()=>{navigate(`/productpage/${curElem?.id}`)}}>
                       <div className="relative flex items-end overflow-hidden rounded-xl lg:h-64">
-                        <div class="absolute border inset-0 z-10 bg-teal-900 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+                        <div class="absolute border inset-0 z-10 bg-teal-800 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
                           {/* <h1  class="tracking-wider">Title</h1>
                           <p  class="mx-auto">Description</p> */}
                           <table class="w-full text-sm text-left text-black-500">
@@ -161,6 +162,7 @@ export default function Product() {
 
               </div>
             </section>
+            </div>
           )
         })}
       </div> 
