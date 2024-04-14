@@ -109,16 +109,14 @@ export default function Product() {
                         <h2 class="text-slate-700">{curElem?.product_name}</h2>
                         <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
 
-                        <div class="mt-3 flex items-end justify-between">
-                          <p>
+                        <div class="mt-3 flex gap-4 items-end justify-between">
+                          {/* <p>
                             <span class="text-lg font-bold text-teal-500">$850</span>
                             <span class="text-slate-400 teal-sm">/night</span>
-                          </p>
-
-                          <div class="group inline-flex rounded-xl bg-teal-100 p-2 hover:bg-teal-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:text-teal-500 h-4 w-4 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
-                              <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
-                            </svg>
+                          </p> */}
+                          <a className="px-3 py-2 min-w-[80px] text-center text-white bg-teal-600 border border-teal-600 rounded active:text-teal-500 hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring" href="/">Enquiry Now</a>
+                          <div class="group inline-flex ">
+                          <a class="px-3 py-2 min-w-[80px] text-center text-teal-600 border border-teal-600 rounded hover:bg-teal-600 hover:text-white active:bg-teal-500 focus:outline-none focus:ring" href="/">View More</a>
                           </div>
                         </div>
                       </div>
