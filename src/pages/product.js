@@ -96,26 +96,30 @@ export default function Product() {
                   <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
                     <div onClick={()=>{navigate(`/productpage/${curElem?.id}`)}}>
                       <div className="relative flex items-end overflow-hidden rounded-xl lg:h-64">
-                        <div class="absolute inset-0 z-10 bg-white text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+                        <div class="absolute border inset-0 z-10 bg-teal-800 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
                           {/* <h1  class="tracking-wider">Title</h1>
                           <p  class="mx-auto">Description</p> */}
                           <table class="w-full text-sm text-left text-black-500">
                                 <tbody>
                                     <tr class="bg-white border-b ">
-                                        <td class="py-3 px-6">Size</td>
-                                        <td class="py-3 px-6">35 X 53 X 6 Mm</td>
+                                        <td class="py-2 px-4 font-semibold">Size</td>
+                                        <td class="py-2 px-4">35 X 53 X 6 Mm</td>
                                     </tr>
                                     <tr class="bg-white border-b">
-                                        <td class="py-3 px-6">Capacity</td>
-                                        <td class="py-3 px-6">300mAh</td>
+                                        <td class="py-2 px-4 font-semibold">Capacity</td>
+                                        <td class="py-2 px-4">300mAh</td>
                                     </tr>
                                     <tr class="bg-white border-b ">
-                                        <td class="py-3 px-6">Country of Origin</td>
-                                        <td class="py-3 px-6">India</td>
+                                        <td class="py-2 px-4 font-semibold">Feature</td>
+                                        <td class="py-2 px-4">Long Life</td>
                                     </tr>
                                     <tr class="bg-white border-b ">
-                                        <td class="py-3 px-6">Brand Name</td>
-                                        <td class="py-3 px-6">Abhi Solution Technology</td>
+                                        <td class="py-2 px-4 font-semibold">Country of Origin</td>
+                                        <td class="py-2 px-4">India</td>
+                                    </tr>
+                                    <tr class="bg-white border-b ">
+                                        <td class="py-2 px-4 font-semibold">Brand Name</td>
+                                        <td class="py-2 px-4">Abhi Solution Technology</td>
                                     </tr>
                                 </tbody>
                             </table>
