@@ -83,7 +83,7 @@ export default function Product() {
           return (
 
             <section class="py-4">
-              <p class="font-bold text-xl">
+              {/* <p class="font-bold text-xl">
                 <span class="text-teal-500 mx-1 font-extrabold text-3xl relative inline-block stroke-current">
                   {value}
                   <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
@@ -91,8 +91,10 @@ export default function Product() {
                     <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
                   </svg>
                 </span>
-              </p>
-              <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4">
+              </p> */}
+              <h3 class="text-3xl lg:text-4xl font-bold"><span class="text-green-700">{value}</span></h3>
+            <div class="w-40 h-2 bg-green-700 my-3"></div>
+              <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4 ">
               {catalaugeList.map((curElem,key) => {
                 if(curElem?.product_category===value)
                  return (<>
@@ -103,6 +105,7 @@ export default function Product() {
                           {/* <h1  class="tracking-wider">Title</h1>
                           <p  class="mx-auto">Description</p> */}
                           <table class="w-full text-sm text-left text-black-500">
+       
                                 <tbody>
                                     <tr class="bg-white border-b ">
                                         <td class="py-2 px-4 font-semibold">Size</td>
@@ -165,6 +168,7 @@ export default function Product() {
 
               </div>
             </section>
+           
           )
         })}
       </div> 
