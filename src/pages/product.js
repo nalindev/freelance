@@ -79,7 +79,7 @@ export default function Product() {
 
         {type.map((value, key) => {
           return (
-            <div data-aos="zoom-out">
+
             <section class="py-4">
               <p class="font-bold text-xl">
                 <span class="text-teal-500 mx-1 font-extrabold text-3xl relative inline-block stroke-current">
@@ -163,7 +163,6 @@ export default function Product() {
 
               </div>
             </section>
-            </div>
           )
         })}
       </div> 
