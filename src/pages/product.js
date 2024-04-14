@@ -96,7 +96,7 @@ export default function Product() {
               {catalaugeList.map((curElem,key) => {
                 if(curElem?.product_category===value)
                  return (<>
-                  <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
+                  <article class="rounded-xl bg-gray-50 p-3 shadow-lg hover:shadow-xl">
                     <div onClick={()=>{navigate(`/productpage/${curElem?.id}`)}}>
                       <div className="relative flex items-end overflow-hidden rounded-xl lg:h-64">
                         <div class="absolute border inset-0 z-10 bg-teal-800 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
