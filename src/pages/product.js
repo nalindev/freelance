@@ -141,7 +141,8 @@ export default function Product() {
 
                       <div class="mt-1 p-2">
                         <h2 class="text-slate-700">{curElem?.product_name}</h2>
-                        <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
+                        {/* <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p> */}
+                        
 
                         <div class="mt-3 flex gap-4 items-end justify-between">
                           {/* <p>
