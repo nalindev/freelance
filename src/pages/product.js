@@ -59,7 +59,9 @@ export default function Product() {
             <p className="text-3xl font-bold md:text-6xl text-white">25% OFF</p>
             <p className="text-3xl font-bold md:text-6xl">SUMMER SALE</p>
             <p className="mt-3 text-sm md:text-lg">For limited time only!</p>
+            <div data-aos="zoom-out-up">
             <button className="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-7 hover:bg-zinc-800">Buy Now</button>
+            </div>
           </div>
           <div class="hidden sm:block order-1 lg:order-2">
             <img className="h-80 w-80 object-cover rounded-3xl lg:w-[220px] lg:h-[270px] hover:shadow" src="https://storage.googleapis.com/ev-public-bucket/images/2024_02_22%2014_10_20_213904_7-4v-2600mah-lithium-ion-solar-battery-1699009054-7157549.jpeg" alt="" />
