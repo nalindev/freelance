@@ -102,19 +102,19 @@ export default function Product() {
                                 <tbody>
                                     <tr className="bg-white border-b ">
                                         <td className="py-2 px-4 font-semibold">Size</td>
-                                        <td className="py-2 px-4">35 X 53 X 6 Mm</td>
+                                        <td className="py-2 px-4">{curElem?.size}</td>
                                     </tr>
                                     <tr className="bg-white border-b">
                                         <td className="py-2 px-4 font-semibold">Capacity</td>
-                                        <td className="py-2 px-4">300mAh</td>
+                                        <td className="py-2 px-4">{curElem?.capacity}</td>
                                     </tr>
                                     <tr className="bg-white border-b ">
                                         <td className="py-2 px-4 font-semibold">Feature</td>
-                                        <td className="py-2 px-4">Long Life</td>
+                                        <td className="py-2 px-4">{curElem?.feature}</td>
                                     </tr>
                                     <tr className="bg-white border-b ">
                                         <td className="py-2 px-4 font-semibold">Country of Origin</td>
-                                        <td className="py-2 px-4">India</td>
+                                        <td className="py-2 px-4">{curElem?.country_of_origin}</td>
                                     </tr>
                                     <tr className="bg-white border-b ">
                                         <td className="py-2 px-4 font-semibold">Brand Name</td>
