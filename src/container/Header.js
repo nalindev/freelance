@@ -1,8 +1,8 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from "../assets/images/Logo.svg"
-import { useNavigate } from "react-router-dom";
-import { useState } from 'react';
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react';
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
@@ -16,6 +16,16 @@ const navigation = [
 export default function Header() {
     const navigate = useNavigate()
     const [navigationItems, setNavigationItems] = useState(navigation)
+
+    const location = useLocation()
+    useEffect(()=>{
+        const updatedItems = navigationItems.map(item => ({
+            ...item,
+            current: item.href === location.pathname
+        }));
+        setNavigationItems(updatedItems)    
+    },[location])
+
 
     const handleItemClick = (clickedItem) => {
         const updatedItems = navigationItems.map(item => ({
