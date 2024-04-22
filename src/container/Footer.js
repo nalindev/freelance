@@ -47,22 +47,22 @@ const Footer = () => {
                             <h3 class="text-md font-semibold leading-6 text-white">Our Products</h3>
                             <ul role="list" class="mt-3 space-y-3">
                                 <li>
-                                    <a href="/aiplatform"
+                                    <a href="/product"
                                         class="text-md leading-6 text-gray-300 hover:text-teal-300">GPS Batteries
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/aialgorithms"
+                                    <a href="/product"
                                         class="text-md leading-6 text-gray-300 hover:text-teal-300">Solar Batteries
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/aialgorithms"
+                                    <a href="/product"
                                         class="text-md leading-6 text-gray-300 hover:text-teal-300">Electric Vehichle Batteries
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/industryapplications"
+                                    <a href="/product"
                                         class="text-md leading-6 text-gray-300 hover:text-teal-300">POS Machine Batteries
                                     </a>
                                 </li>
@@ -72,12 +72,12 @@ const Footer = () => {
                         <h3 class="text-md font-semibold leading-6 text-white ">General Links</h3>
                             <ul role="list" class="mt-3 space-y-3">
                                 <li>
-                                    <a href="/aiplatform"
+                                    <a href="/aboutus"
                                         class="text-md leading-6 text-gray-300 hover:text-teal-300">About Us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/aialgorithms"
+                                    <a href="/contact"
                                         class="text-md leading-6 text-gray-300  hover:text-teal-300">Contact us
                                     </a>
                                 </li>

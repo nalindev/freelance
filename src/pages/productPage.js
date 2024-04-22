@@ -67,7 +67,7 @@ function ProductPage() {
             {/* Image space */}
             <div className="max-w-7xl mx-auto p-8">
                 <div class="flex items-center text-sm">
-                    <span class="text-gray-900/40"><a href="/" class="hover:text-teal-600">Products</a> / <a href="/" class="hover:text-teal-600">GPS Batteries</a> / <span href="/" class="text-black">3.7V 300mAh Lithium Ion Battery</span></span>
+                    <span class="text-gray-900/40"><a href="/product" class="hover:text-teal-600">Products</a> / <a href="/" class="hover:text-teal-600">{product?.product_category}</a> / <span href="/" class="text-black">{product?.product_name}</span></span>
                 </div>
 
                 <div className='flex flex-col justify-between lg:flex-row p-4 gap-10 '>
@@ -119,7 +119,7 @@ function ProductPage() {
                                 </tr>
                                 <tr class="bg-white border-b ">
                                     <td class="py-3 px-6">Application</td>
-                                    <td class="py-3 px-6">Commercial, Residential</td>
+                                    <td class="py-3 px-6">{product?.usage}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -128,7 +128,7 @@ function ProductPage() {
                             <p class="leading-relaxed px-3 text-x font-bold">Preferred Buyer From</p>
                             <tr class="bg-white border-b">
                                 <td class="py-3 px-6">Location</td>
-                                <td class="py-3 px-6">WorldWide</td>
+                                <td class="py-3 px-6">{product?.location}</td>
                             </tr>
                         </table>
 
@@ -177,19 +177,19 @@ function ProductPage() {
                                 <tbody>
                                     <tr class="bg-white border-b ">
                                         <td class="py-3 px-6">Size</td>
-                                        <td class="py-3 px-6">35 X 53 X 6 Mm</td>
+                                        <td class="py-3 px-6">{product?.size}</td>
                                     </tr>
                                     <tr class="bg-white border-b">
                                         <td class="py-3 px-6">Capacity</td>
-                                        <td class="py-3 px-6">300mAh</td>
+                                        <td class="py-3 px-6">{product?.capacity}</td>
                                     </tr>
                                     <tr class="bg-white border-b ">
                                         <td class="py-3 px-6">Country of Origin</td>
-                                        <td class="py-3 px-6">India</td>
+                                        <td class="py-3 px-6">{product?.country_of_origin}</td>
                                     </tr>
                                     <tr class="bg-white border-b ">
                                         <td class="py-3 px-6">Brand Name</td>
-                                        <td class="py-3 px-6">Abhi Solution Technology</td>
+                                        <td class="py-3 px-6">{product?.brand_name}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -200,15 +200,15 @@ function ProductPage() {
                                 <tbody>
                                     <tr class="bg-white border-b ">
                                         <td class="py-3 px-6">Feature</td>
-                                        <td class="py-3 px-6">Long Life</td>
+                                        <td class="py-3 px-6">{product?.feature}</td>
                                     </tr>
                                     <tr class="bg-white border-b">
                                         <td class="py-3 px-6">Type</td>
-                                        <td class="py-3 px-6">Rechargeable</td>
+                                        <td class="py-3 px-6">{product?.type}</td>
                                     </tr>
                                     <tr class="bg-white border-b ">
                                         <td class="py-3 px-6">Life Cycles</td>
-                                        <td class="py-3 px-6">600</td>
+                                        <td class="py-3 px-6">{product?.life_cycles}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -237,7 +237,7 @@ function ProductPage() {
                 <div className='box-border p-2 hover:shadow-lg border-2 rounded-md xl:flex xl:items-center xl:justify-between'>
                 <div className='flex flex-col justify-between lg:flex-row p-4 lg:gap-10 sm:gap-10'>
                 <div className='flex flex-col gap-6 lg:w-2/4 justify-between lg:flex-row lg:items-center'>
-                    <h3 className='text-2xl  tracking-wide p-3 px-6 xl:py-16'>Looking for "3.7V 1100mAh Lithium Ion Battery" ?</h3>
+                    <h3 className='text-2xl  tracking-wide p-3 px-6 xl:py-16'>Looking for {product?.product_name} ?</h3>
                     </div>
                     <div className='flex flex-col gap-6 lg:w-2/4'>
 <form class="px-4 py-4">

@@ -81,7 +81,7 @@ const Introduction = () => {
               <FaStar class="h-5 w-5"/>
               <FaStar class="h-5 w-5"/>
             </div>
-            <p class="mt-0.5 text-lg font-medium text-gray-900">Nalin Nishant</p>
+            <p class="mt-0.5 text-lg font-medium text-gray-900">Anil Kumar</p>
           </div>
         </div>
         <p class="mt-4 text-gray-700">Powering up with Abhi Solution has been a game-changer! Their batteries are not only reliable but also eco-friendly, saving me money in the long run. Plus, their customer service is top-notch. If you want quality batteries that won't let you down, I highly recommend Abhi Solution!</p>
@@ -97,7 +97,7 @@ const Introduction = () => {
               <FaStar class="h-5 w-5"/>
               <FaStar class="h-5 w-5"/>
             </div>
-            <p class="mt-0.5 text-lg font-medium text-gray-900">Nalin Nishant</p>
+            <p class="mt-0.5 text-lg font-medium text-gray-900">Anil Kumar</p>
           </div>
         </div>
         <p class="mt-4 text-gray-700">Powering up with Abhi Solution has been a game-changer! Their batteries are not only reliable but also eco-friendly, saving me money in the long run. Plus, their customer service is top-notch. If you want quality batteries that won't let you down, I highly recommend Abhi Solution!</p>
@@ -113,7 +113,7 @@ const Introduction = () => {
               <FaStar class="h-5 w-5"/>
               <FaStar class="h-5 w-5"/>
             </div>
-            <p class="mt-0.5 text-lg font-medium text-gray-900">Nalin Nishant</p>
+            <p class="mt-0.5 text-lg font-medium text-gray-900">Anil Kumar</p>
           </div>
         </div>
         <p class="mt-4 text-gray-700">Powering up with Abhi Solution has been a game-changer! Their batteries are not only reliable but also eco-friendly, saving me money in the long run. Plus, their customer service is top-notch. If you want quality batteries that won't let you down, I highly recommend Abhi Solution!</p>
